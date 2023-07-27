@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap demo</title>
+
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1  class="text-danger">click the button to change the text </h1>
+      <button type="button" class="btn btn-dark my-2" onclick=" textchange()">text change</button>
+      <h2 id="h2">hello world</h2>
+
+    </div>
+    <div class="container">
+      <h1  class="text-danger">click the button to change the date </h1>
+      <button type="button" class="btn btn-dark"  onclick="showdate()">show date</button>
+        <h2 id="dh2">date</h2>
+    </div>
+
+    <div class="container">
+      <h1  class="text-danger">click the button to repeat the message </h1>
+      <button type="button" class="btn btn-dark"  onclick="repeatmessage()">repeat</button>
+        <h2 id="dm2">text</h2>
+    </div>
+
+
+    <div class="container">
+      <h1 class="text-danger">click the button to on/off the lightS </h1>
+      <button type="button" class="btn btn-success" onclick="bulbon()">on</button>
+       <button type="button" class="btn btn-dark" onclick="bulboff()">off</button>
+      <img id="bulb" src="image/off.gif">
+       
+    </div>
+    
+
+    <div class="container">
+      <h1 class="text-danger">click the button to change the font size </h1>
+      <button type="button" class="btn btn-dark" onclick="fontsize()">font size</button>
+      <h2 id="fs">lorem text </h2>
+    </div>
+
+   <div class="container">
+      <h1 class="text-danger">click the button to show/hide</h1>
+      <button type="button" class="btn btn-dark" onclick="textShow()">show</button>
+      <button type="button" class="btn btn-dark" onclick="textHide()">hide</button>
+      <h2 id="db">lorem text </h2>
+    </div>
+
+    <div class="container">
+      <h1 class="text-danger">click the button to show result </h1>
+      <button type="button" class="btn btn-dark" onclick="output()">hide</button>
+      <h2 id="op"></h2>
+    </div>
+
+   <!--css js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
